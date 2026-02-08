@@ -12,27 +12,28 @@
         header { background: #000; color: white; padding: 40px 20px; text-align: center; border-bottom: 4px solid var(--primary); }
         .container { max-width: 900px; margin: 20px auto; padding: 10px; }
         
-        .seccion { background: white; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .titulo-seccion { background: #111; color: white; padding: 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
-        .titulo-seccion:hover { background: #222; }
+        .seccion { background: white; margin-bottom: 12px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .titulo-seccion { background: #111; color: white; padding: 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.5px; }
+        .titulo-seccion:hover { background: #1a1a1a; }
         
         .contenido { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .cuerpo-texto { padding: 25px; white-space: pre-wrap; font-size: 0.95rem; line-height: 1.7; }
+        .cuerpo-texto { padding: 20px; white-space: pre-wrap; font-size: 0.95rem; color: #333; line-height: 1.6; }
         
-        /* CUADRO DE ACEPTACIÓN ESTILO IMAGEN */
+        /* CUADRO DE ACEPTACIÓN AL FINAL */
         .aceptacion-box { 
             background-color: var(--success-bg); 
-            border: 1.5px solid var(--success-border); 
-            border-radius: 10px; 
+            border: 1px solid var(--success-border); 
+            border-radius: 8px; 
             padding: 25px; 
             text-align: center; 
-            margin-top: 30px; 
+            margin-top: 40px; 
+            margin-bottom: 40px;
         }
         .aceptacion-box h3 { 
             color: #2c3e50; 
-            font-size: 1.1rem; 
+            font-size: 1.05rem; 
             font-weight: 700; 
-            margin-bottom: 8px; 
+            margin-bottom: 10px; 
             display: flex; 
             align-items: center; 
             justify-content: center; 
@@ -40,11 +41,12 @@
         }
         .aceptacion-box p { 
             color: #34495e; 
-            font-size: 0.95rem; 
-            line-height: 1.4;
+            font-size: 0.9rem; 
+            margin: 0 auto;
+            max-width: 85%;
         }
 
-        .footer { text-align: center; padding: 40px; font-size: 0.8rem; color: #888; }
+        .footer { text-align: center; padding: 30px; font-size: 0.8rem; color: #888; border-top: 1px solid #ddd; }
         strong { color: #000; font-weight: 700; }
     </style>
 </head>
@@ -56,14 +58,14 @@
 </header>
 
 <div class="container">
-    <div style="padding: 15px; background: white; border-radius: 5px; margin-bottom: 20px; border: 1px solid #ddd; font-size: 0.95rem;">
+
+    <div style="background: white; padding: 20px; border-radius: 4px; margin-bottom: 25px; border: 1px solid #ddd; font-size: 0.95rem; text-align: center;">
         Este documento establece las reglas oficiales para las organizaciones criminales en Agrio RP, con el objetivo de garantizar un rol equilibrado, coherente y seguro entre organizaciones, facciones policiales y civiles.
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">1. 🔍 Conocimiento de Organizaciones <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Todas las organizaciones conocen la existencia de otras organizaciones, incluyendo:
+        <div class="contenido"><div class="cuerpo-texto">Todas las organizaciones conocen la existencia de otras organizaciones, incluyendo:
 Nombre
 Colores
 Zona de influencia
@@ -75,14 +77,12 @@ Hablar libremente sobre otras organizaciones o de la misma
 Entrar a sedes ajenas sin autorización
 Atacar sin motivo justificado
 
-❗ Ninguna organización puede compartir información de otra.</div>
-        </div>
+❗ Ninguna organización puede compartir información de otra.</div></div>
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">2. 💼 Beneficios de pertenecer a una organización <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Los miembros de una organización criminal tienen acceso a:
+        <div class="contenido"><div class="cuerpo-texto">Los miembros de una organización criminal tienen acceso a:
 Menú F6 exclusivo
 Barrio o sede propia
 Tienda de ropa en la sede (Si corresponde)
@@ -97,121 +97,99 @@ Funciones principales
 Cachear personajes
 Sacar DNI y verificar antecedentes
 Esposar, escoltar y trasladar sujetos
-⚠️ El abuso del menú F6 puede conllevar sanción administrativa o CK.</div>
-        </div>
+⚠️ El abuso del menú F6 puede conllevar sanción administrativa o CK.</div></div>
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">3. 📋 Obligaciones generales <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">No iniciar rol agresivo sin justificación previa
+        <div class="contenido"><div class="cuerpo-texto">No iniciar rol agresivo sin justificación previa
 Respetar a todos los jugadores y a la administración
 Secuestros solo con motivo justificado
 Acatar todas las decisiones administrativas
-No iniciar agresiones por multas de tráfico o paradas rutinarias</div>
-        </div>
+No iniciar agresiones por multas de tráfico o paradas rutinarias</div></div>
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">4. 🚫 Desactivación de la organización <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">La desactivación implica la pérdida total de beneficios, incluyendo:
+        <div class="contenido"><div class="cuerpo-texto">La desactivación implica la pérdida total de beneficios, incluyendo:
 Menú F6
 Ropa representativa
 Sede
 Armarios
-Vehículos</div>
-        </div>
+Vehículos</div></div>
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">5. ⏱️ Tiempos de espera <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Las salidas permanentes requieren cumplir tiempos de espera antes de volver a rolear en la misma
+        <div class="contenido"><div class="cuerpo-texto">Las salidas permanentes requieren cumplir tiempos de espera antes de volver a rolear en la misma
 organización.
 📌 El tiempo de espera será de:
 Para ir a otra organización / facción policial será de 7 días
-Para volver a la misma organización será de 15 dias</div>
-        </div>
+Para volver a la misma organización será de 15 dias</div></div>
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">6. 📝 Plantilla en Discord <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Mantener actualizada la lista de miembros en el Discord oficial
+        <div class="contenido"><div class="cuerpo-texto">Mantener actualizada la lista de miembros en el Discord oficial
 Cualquier inconsistencia (miembro no registrado, rango incorrecto) puede generar sanción
 administrativa
 
-Las salidas permanentes deben notificarse mediante CK validado</div>
-        </div>
+Las salidas permanentes deben notificarse mediante CK validado</div></div>
     </div>
 
     <div class="seccion">
-        <div class="titulo-seccion">7. ️ Sedes y barrios <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Las sedes son el núcleo de la organización (armas, drogas y dinero)
+        <div class="titulo-seccion">7. 🏘️ Sedes y barrios <span>+</span></div>
+        <div class="contenido"><div class="cuerpo-texto">Las sedes son el núcleo de la organización (armas, drogas y dinero)
 El negocio ilícito solo puede realizarse con permiso de la organización residente
 Prohibido evadir rol usando sedes
 Cualquier irrupción requiere rol previo
-Espera mínima de 10 minutos tras un rol agresivo antes de volver a entrar</div>
-        </div>
+Espera mínima de 10 minutos tras un rol agresivo antes de volver a entrar</div></div>
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">8. 👕 Vestimenta y colores <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Obligatorio usar ropa representativa en roles de organización
+        <div class="contenido"><div class="cuerpo-texto">Obligatorio usar ropa representativa en roles de organización
 Prohibido usar ropa de otra organización para confundir o simular alianzas
-⚠️ El incumplimiento genera strike administrativo.</div>
-        </div>
+⚠️ El incumplimiento genera strike administrativo.</div></div>
     </div>
 
     <div class="seccion">
-        <div class="titulo-seccion">9. ️ Refuerzos <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Solo pueden actuar cuando el bando contrario haya solicitado refuerzos
-Prohibido campear zonas esperando el inicio del tiroteo</div>
-        </div>
+        <div class="titulo-seccion">9. 🛡️ Refuerzos <span>+</span></div>
+        <div class="contenido"><div class="cuerpo-texto">Solo pueden actuar cuando el bando contrario haya solicitado refuerzos
+Prohibido campear zonas esperando el inicio del tiroteo</div></div>
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">10. 🔒 Roles exclusivos <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Secuestros justificados
+        <div class="contenido"><div class="cuerpo-texto">Secuestros justificados
 Rescates de miembros
 Rescate de perpetua
 Ajustes de cuentas
-Retirada de DNI en situaciones justificadas</div>
-        </div>
+Retirada de DNI en situaciones justificadas</div></div>
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">11. 🏹 Ataque a sedes <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Permitido solo con información validada y motivo aprobado
+        <div class="contenido"><div class="cuerpo-texto">Permitido solo con información validada y motivo aprobado
 CK estricto: muerte sin hospitalización es CK instantáneo
-La desmatelación de la organización no será obligatoría</div>
-        </div>
+La desmatelación de la organización no será obligatoría</div></div>
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">12. ⏳ Secuestros <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Policías
+        <div class="contenido"><div class="cuerpo-texto">Policías
 Notificar ubicación del secuestrado
 Pago vía transferencia bancaria
 Duración máxima: 45 minutos (salvo forzar rol)
 Civiles y miembros de otras organizaciones
 Requiere motivo justificado (drogas, armas, ajustes de cuentas o investigación validada)
 Humillaciones solo si mantienen coherencia y sin hacer perder consciencia
-Interrogatorios requieren validación previa</div>
-        </div>
+Interrogatorios requieren validación previa</div></div>
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">13. 📹 Validación de información <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Requisitos
+        <div class="contenido"><div class="cuerpo-texto">Requisitos
 Vestimenta obligatoria según organización
 Grabación desde dispositivos válidos (teléfono, cámara o helicóptero)
 Sin edición
@@ -228,33 +206,27 @@ Procedimiento
 2. Subir clip a YouTube en oculto
 3. Adjuntar enlace y lista de información
 4. Taggear a un validador
-i️ Solo la información validada puede usarse en rol.</div>
-        </div>
+i️ Solo la información validada puede usarse en rol.</div></div>
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">14. 🤝 Alianzas <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Cada organización puede tener una única alianza activa
+        <div class="contenido"><div class="cuerpo-texto">Cada organización puede tener una única alianza activa
 Debe validarse mediante rol previo
 Para romper una alianza se requiere rol con mínimo 4 integrantes por bando
 Tras romper una alianza, se deberá esperar 1 mes antes de establecer otra
-⚠️ El incumplimiento puede conllevar sanciones administrativas.</div>
-        </div>
+⚠️ El incumplimiento puede conllevar sanciones administrativas.</div></div>
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">15. ⚔️ Ajustes de cuentas y guerras <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Solo pueden declararse mediante actos validados por la administración
-La organización afectada podrá responder según normativa vigente</div>
-        </div>
+        <div class="contenido"><div class="cuerpo-texto">Solo pueden declararse mediante actos validados por la administración
+La organización afectada podrá responder según normativa vigente</div></div>
     </div>
 
     <div class="seccion">
         <div class="titulo-seccion">16. 📊 Actividad semanal obligatoria <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Toda organización deberá cumplir un mínimo de actividad semanal.
+        <div class="contenido"><div class="cuerpo-texto">Toda organización deberá cumplir un mínimo de actividad semanal.
 Requisitos
 Actividad en calle o puntos de droga
 No cuenta actividad dentro de sede
@@ -265,14 +237,12 @@ Mínimos semanales
 Cartel: 12 actividades
 Mafia: 8 actividades
 Banda: 5 actividades
-Pandilla: 5 actividades</div>
-        </div>
+Pandilla: 5 actividades</div></div>
     </div>
 
     <div class="seccion">
-        <div class="titulo-seccion">17. ️ Jerarquías de la organización <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">Cada organización deberá mantener una estructura jerárquica clara.
+        <div class="titulo-seccion">17. 👑 Jerarquías de la organización <span>+</span></div>
+        <div class="contenido"><div class="cuerpo-texto">Cada organización deberá mantener una estructura jerárquica clara.
 Estructura máxima permitida
 Cartel
 2 Jefes
@@ -286,12 +256,11 @@ Banda
 Pandilla
 1 Jefe
 ⚠️ No se permitirá exceder estos límites.
-Cualquier cambio deberá reflejarse en la plantilla de Discord.</div>
-        </div>
+Cualquier cambio deberá reflejarse en la plantilla de Discord.</div></div>
     </div>
 
     <div class="aceptacion-box">
-        <h3><span style="font-size: 1.2rem;">✅</span> ACEPTACIÓN DE LA NORMATIVA</h3>
+        <h3><span>✅</span> ACEPTACIÓN DE LA NORMATIVA</h3>
         <p>El desconocimiento de estas reglas no exime de su cumplimiento. Al hacer tu Whitelist, firmas un contrato de calidad con la administración de Agrio RP. Si no estás dispuesto a perder (perder dinero, perder armas o perder a tu personaje), el rol serio es para ti.</p>
     </div>
 
