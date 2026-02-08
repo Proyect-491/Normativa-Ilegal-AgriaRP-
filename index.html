@@ -3,39 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Normativa Vallecas RP</title>
+    <title>Normativa Agrio RP</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #ff4500; --dark: #000000; --bg: #f8f8f8; }
+        :root { --primary: #ff4500; --dark: #000000; --bg: #f8f8f8; --success-bg: #ebf9f1; --success-border: #2ecc71; }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
         body { background-color: var(--bg); color: #1a1a1a; line-height: 1.5; }
         header { background: #000; color: white; padding: 40px 20px; text-align: center; border-bottom: 4px solid var(--primary); }
         .container { max-width: 900px; margin: 20px auto; padding: 10px; }
         
-        .seccion { background: white; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-left: 5px solid var(--dark); }
-        .titulo-seccion { background: #111; color: white; padding: 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
-        .titulo-seccion:hover { background: #222; border-left: 5px solid var(--primary); }
+        .seccion { background: white; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .titulo-seccion { background: #111; color: white; padding: 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .titulo-seccion:hover { background: #222; }
         
         .contenido { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .cuerpo-texto { padding: 20px; white-space: pre-wrap; font-size: 0.95rem; }
+        .cuerpo-texto { padding: 25px; white-space: pre-wrap; font-size: 0.95rem; line-height: 1.7; }
         
-        .info-box { background: #fff3f0; border: 1px solid #ff4500; padding: 15px; margin: 10px 0; border-radius: 4px; }
-        .prohibido { color: #d32f2f; font-weight: bold; }
-        .footer { text-align: center; padding: 30px; font-size: 0.8rem; color: #666; }
-        
+        /* CUADRO DE ACEPTACIÓN ESTILO IMAGEN */
+        .aceptacion-box { 
+            background-color: var(--success-bg); 
+            border: 1.5px solid var(--success-border); 
+            border-radius: 10px; 
+            padding: 25px; 
+            text-align: center; 
+            margin-top: 30px; 
+        }
+        .aceptacion-box h3 { 
+            color: #2c3e50; 
+            font-size: 1.1rem; 
+            font-weight: 700; 
+            margin-bottom: 8px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 8px;
+        }
+        .aceptacion-box p { 
+            color: #34495e; 
+            font-size: 0.95rem; 
+            line-height: 1.4;
+        }
+
+        .footer { text-align: center; padding: 40px; font-size: 0.8rem; color: #888; }
         strong { color: #000; font-weight: 700; }
-        hr { border: 0; border-top: 1px solid #eee; margin: 15px 0; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>📜 Normativa de Organizaciones Criminales</h1>
-    <p>Agrio RP</p>
+    <p>Vallecas RP</p>
 </header>
 
 <div class="container">
-    <div style="padding: 15px; background: white; border-radius: 5px; margin-bottom: 20px; border: 1px solid #ddd;">
+    <div style="padding: 15px; background: white; border-radius: 5px; margin-bottom: 20px; border: 1px solid #ddd; font-size: 0.95rem;">
         Este documento establece las reglas oficiales para las organizaciones criminales en Agrio RP, con el objetivo de garantizar un rol equilibrado, coherente y seguro entre organizaciones, facciones policiales y civiles.
     </div>
 
@@ -117,7 +138,7 @@ Para volver a la misma organización será de 15 dias</div>
     <div class="seccion">
         <div class="titulo-seccion">6. 📝 Plantilla en Discord <span>+</span></div>
         <div class="contenido">
-            <div class="cuerpo-texto">Mantener actualizar la lista de miembros en el Discord oficial
+            <div class="cuerpo-texto">Mantener actualizada la lista de miembros en el Discord oficial
 Cualquier inconsistencia (miembro no registrado, rango incorrecto) puede generar sanción
 administrativa
 
@@ -269,24 +290,21 @@ Cualquier cambio deberá reflejarse en la plantilla de Discord.</div>
         </div>
     </div>
 
-    <div class="seccion" style="border-left: 5px solid var(--primary);">
-        <div class="titulo-seccion" style="background: var(--primary);">18. ✅ Cumplimiento <span>+</span></div>
-        <div class="contenido">
-            <div class="cuerpo-texto">El desconocimiento de estas reglas no exime de su cumplimiento. Al hacer tu Whitelist, firmas un contrato de calidad con la administración de Agrio Rp. Si no estás dispuesto a perder (perder dinero, perder armas o perder a tu personaje), el rol serio es para ti</div>
-        </div>
+    <div class="aceptacion-box">
+        <h3><span style="font-size: 1.2rem;">✅</span> ACEPTACIÓN DE LA NORMATIVA</h3>
+        <p>El desconocimiento de estas reglas no exime de su cumplimiento. Al hacer tu Whitelist, firmas un contrato de calidad con la administración de Agrio RP. Si no estás dispuesto a perder (perder dinero, perder armas o perder a tu personaje), el rol serio es para ti.</p>
     </div>
 
 </div>
 
 <div class="footer">
-    <p>&copy; 2026 Agrio RP - Normativa de Organizaciones Criminales</p>
+    <p>© 2026 Agrio RP - Todos los derechos reservados.</p>
 </div>
 
 <script>
     var acc = document.getElementsByClassName("titulo-seccion");
     for (var i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
             var panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
