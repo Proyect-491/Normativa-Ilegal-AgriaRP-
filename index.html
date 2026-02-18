@@ -1,98 +1,107 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Normativa Kora RP</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <style>
-        
-        :root { 
-            --primary: #9e0000;      
-            --primary-dark: #660000; 
-            --dark: #000000; 
-            --bg: #f8f8f8; 
-            --success-bg: #fff5f5;   
-            --success-border: #9e0000; 
-        }
+
+        :root { --primary: #ff4500; --dark: #000000; --bg: #f8f8f8; --success-bg: #ebf9f1; --success-border: #2ecc71; }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
         body { background-color: var(--bg); color: #1a1a1a; line-height: 1.5; }
 
-        header { 
-            background: linear-gradient(180deg, #000 0%, #1a0000 100%); 
-            color: white; 
-            padding: 40px 20px; 
-            text-align: center; 
-            border-bottom: 4px solid var(--primary); 
-        }
+        header { background: #000; color: white; padding: 40px 20px; text-align: center; border-bottom: 4px solid var(--primary); }
 
         .container { max-width: 900px; margin: 20px auto; padding: 10px; }
-        
-        .seccion { background: white; margin-bottom: 12px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        
-        .titulo-seccion { 
-            background: #111; 
-            color: white; 
-            padding: 16px; 
-            cursor: pointer; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            font-weight: 600; 
-            text-transform: uppercase; 
-            font-size: 0.9rem; 
-            letter-spacing: 0.5px; 
-            transition: 0.3s;
-        }
 
-        .titulo-seccion:hover { background: var(--primary-dark); }
         
+
+        .seccion { background: white; margin-bottom: 12px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+        .titulo-seccion { background: #111; color: white; padding: 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.5px; }
+
+        .titulo-seccion:hover { background: #1a1a1a; }
+
+        
+
         .contenido { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .cuerpo-texto { 
-            padding: 20px; 
-            white-space: pre-wrap; 
-            font-size: 0.95rem; 
-            color: #333; 
-            line-height: 1.6; 
-            border-left: 3px solid var(--primary); 
-        }
+
+        .cuerpo-texto { padding: 20px; white-space: pre-wrap; font-size: 0.95rem; color: #333; line-height: 1.6; }
+
         
-        
+
+        /* CUADRO DE ACEPTACIÓN AL FINAL */
+
         .aceptacion-box { 
+
             background-color: var(--success-bg); 
+
             border: 1px solid var(--success-border); 
+
             border-radius: 8px; 
+
             padding: 25px; 
+
             text-align: center; 
+
             margin-top: 40px; 
+
             margin-bottom: 40px;
+
         }
 
         .aceptacion-box h3 { 
-            color: var(--primary); 
+
+            color: #2c3e50; 
+
             font-size: 1.05rem; 
+
             font-weight: 700; 
+
             margin-bottom: 10px; 
+
             display: flex; 
+
             align-items: center; 
+
             justify-content: center; 
+
             gap: 8px;
+
         }
 
         .aceptacion-box p { 
+
             color: #34495e; 
+
             font-size: 0.9rem; 
+
             margin: 0 auto;
+
             max-width: 85%;
+
         }
 
+
+
         .footer { text-align: center; padding: 30px; font-size: 0.8rem; color: #888; border-top: 1px solid #ddd; }
-        
-        
-        strong { color: var(--primary-dark); font-weight: 700; }
+
+        strong { color: #000; font-weight: 700; }
+
     </style>
+
 </head>
+
 <body>
 
     <header>
