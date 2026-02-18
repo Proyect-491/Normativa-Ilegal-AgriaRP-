@@ -6,20 +6,59 @@
     <title>Normativa Kora RP</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #ff4500; --dark: #000000; --bg: #f8f8f8; --success-bg: #ebf9f1; --success-border: #2ecc71; }
+        
+        :root { 
+            --primary: #9e0000;      
+            --primary-dark: #660000; 
+            --dark: #000000; 
+            --bg: #f8f8f8; 
+            --success-bg: #fff5f5;   
+            --success-border: #9e0000; 
+        }
+
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
         body { background-color: var(--bg); color: #1a1a1a; line-height: 1.5; }
-        header { background: #000; color: white; padding: 40px 20px; text-align: center; border-bottom: 4px solid var(--primary); }
+
+        header { 
+            background: linear-gradient(180deg, #000 0%, #1a0000 100%); 
+            color: white; 
+            padding: 40px 20px; 
+            text-align: center; 
+            border-bottom: 4px solid var(--primary); 
+        }
+
         .container { max-width: 900px; margin: 20px auto; padding: 10px; }
         
         .seccion { background: white; margin-bottom: 12px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .titulo-seccion { background: #111; color: white; padding: 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.5px; }
-        .titulo-seccion:hover { background: #1a1a1a; }
+        
+        .titulo-seccion { 
+            background: #111; 
+            color: white; 
+            padding: 16px; 
+            cursor: pointer; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            font-weight: 600; 
+            text-transform: uppercase; 
+            font-size: 0.9rem; 
+            letter-spacing: 0.5px; 
+            transition: 0.3s;
+        }
+
+        .titulo-seccion:hover { background: var(--primary-dark); }
         
         .contenido { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .cuerpo-texto { padding: 20px; white-space: pre-wrap; font-size: 0.95rem; color: #333; line-height: 1.6; }
+        .cuerpo-texto { 
+            padding: 20px; 
+            white-space: pre-wrap; 
+            font-size: 0.95rem; 
+            color: #333; 
+            line-height: 1.6; 
+            border-left: 3px solid var(--primary); 
+        }
         
-        /* CUADRO DE ACEPTACIÓN AL FINAL */
+        
         .aceptacion-box { 
             background-color: var(--success-bg); 
             border: 1px solid var(--success-border); 
@@ -29,8 +68,9 @@
             margin-top: 40px; 
             margin-bottom: 40px;
         }
+
         .aceptacion-box h3 { 
-            color: #2c3e50; 
+            color: var(--primary); 
             font-size: 1.05rem; 
             font-weight: 700; 
             margin-bottom: 10px; 
@@ -39,6 +79,7 @@
             justify-content: center; 
             gap: 8px;
         }
+
         .aceptacion-box p { 
             color: #34495e; 
             font-size: 0.9rem; 
@@ -47,10 +88,55 @@
         }
 
         .footer { text-align: center; padding: 30px; font-size: 0.8rem; color: #888; border-top: 1px solid #ddd; }
-        strong { color: #000; font-weight: 700; }
+        
+        
+        strong { color: var(--primary-dark); font-weight: 700; }
     </style>
 </head>
 <body>
+
+    <header>
+        <h1>NORMATIVA KORA RP</h1>
+        <p style="font-size: 0.8rem; opacity: 0.8; margin-top: 5px;">Edición adaptada al reglamento oficial</p>
+    </header>
+
+    <div class="container">
+        <div class="seccion">
+            <div class="titulo-seccion" onclick="toggleSection(this)">
+                <span>1. Normas Generales</span>
+                <span>▼</span>
+            </div>
+            <div class="contenido">
+                <div class="cuerpo-texto">
+                    El incumplimiento de estas normas conlleva sanciones administrativas. 
+                    <strong>Es obligatorio leer todo el contenido.</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="aceptacion-box">
+            <h3>✓ NORMATIVA LEÍDA Y ACEPTADA</h3>
+            <p>Al entrar al servidor, el usuario acepta de forma automática el cumplimiento de cada uno de los puntos expuestos en este documento.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Kora RP. Todos los derechos reservados.
+    </div>
+
+    <script>
+        function toggleSection(element) {
+            const contenido = element.nextElementSibling;
+            if (contenido.style.maxHeight && contenido.style.maxHeight !== "0px") {
+                contenido.style.maxHeight = "0px";
+            } else {
+                contenido.style.maxHeight = contenido.scrollHeight + "px";
+            }
+        }
+    </script>
+
+</body>
+</html>
 
 <header>
     <h1>📜 Normativa de Organizaciones Criminales</h1>
